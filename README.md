@@ -22,14 +22,14 @@ Unittest test:
 make clean install test
 ```
 
-Check for carpark_forecast in github.com/{group}. If your project is not set please add it:
+Check for carpark_forecast in github.com/anaisetienne. If your project is not set please add it:
 
-Create a new project on github.com/{group}/carpark_forecast
+Create a new project on github.com/anaisetienne/carpark_forecast
 Then populate it:
 
 ```bash
-##   e.g. if group is "{group}" and project_name is "carpark_forecast"
-git remote add origin git@github.com:{group}/carpark_forecast.git
+##   e.g. if group is "anaisetienne" and project_name is "carpark_forecast"
+git remote add origin git@github.com:anaisetienne/carpark_forecast.git
 git push -u origin master
 git push -u origin --tags
 ```
@@ -45,7 +45,7 @@ carpark_forecast-run
 
 # Install
 
-Go to `https://github.com/{group}/carpark_forecast` to see the project, manage issues,
+Go to `https://github.com/anaisetienne/carpark_forecast` to see the project, manage issues,
 setup you ssh public key, ...
 
 Create a python3 virtualenv and activate it:
@@ -58,7 +58,7 @@ deactivate; virtualenv -ppython3 ~/venv ; source ~/venv/bin/activate
 Clone the project and install it:
 
 ```bash
-git clone git@github.com:{group}/carpark_forecast.git
+git clone git@github.com:anaisetienne/carpark_forecast.git
 cd carpark_forecast
 pip install -r requirements.txt
 make clean install test                # install and test
