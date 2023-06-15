@@ -1,6 +1,6 @@
 # Data analysis
-- Document here the project: dummy_project
-- Description: Project Description
+- Document here the project: carpark_forecast
+- Description: Make predictions of numbers of bookings for car parks
 - Data Source:
 - Type of analysis:
 
@@ -22,14 +22,14 @@ Unittest test:
 make clean install test
 ```
 
-Check for dummy_project in github.com/{group}. If your project is not set please add it:
+Check for carpark_forecast in github.com/{group}. If your project is not set please add it:
 
-Create a new project on github.com/{group}/dummy_project
+Create a new project on github.com/{group}/carpark_forecast
 Then populate it:
 
 ```bash
-##   e.g. if group is "{group}" and project_name is "dummy_project"
-git remote add origin git@github.com:{group}/dummy_project.git
+##   e.g. if group is "{group}" and project_name is "carpark_forecast"
+git remote add origin git@github.com:{group}/carpark_forecast.git
 git push -u origin master
 git push -u origin --tags
 ```
@@ -40,12 +40,12 @@ Functionnal test with a script:
 cd
 mkdir tmp
 cd tmp
-dummy_project-run
+carpark_forecast-run
 ```
 
 # Install
 
-Go to `https://github.com/{group}/dummy_project` to see the project, manage issues,
+Go to `https://github.com/{group}/carpark_forecast` to see the project, manage issues,
 setup you ssh public key, ...
 
 Create a python3 virtualenv and activate it:
@@ -58,8 +58,8 @@ deactivate; virtualenv -ppython3 ~/venv ; source ~/venv/bin/activate
 Clone the project and install it:
 
 ```bash
-git clone git@github.com:{group}/dummy_project.git
-cd dummy_project
+git clone git@github.com:{group}/carpark_forecast.git
+cd carpark_forecast
 pip install -r requirements.txt
 make clean install test                # install and test
 ```
@@ -69,5 +69,5 @@ Functionnal test with a script:
 cd
 mkdir tmp
 cd tmp
-dummy_project-run
+carpark_forecast-run
 ```
