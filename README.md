@@ -73,13 +73,29 @@ carpark_forecast-run
 ```
 
 # Explanations of data
-id: booking number
-seller: effia.com (direct booking) or Onepark (indirect booking, we pay a commission)
-pocket: id code of the park
-product: what type of product has been purchased: hourly fare, weekend/1 week packages...
-status: canceled, finished (past booking), progress ()
-option: standard or premium (better slot, guest pay an extra fee)
-guest_id: guest id (info available only for direct booking with effia.com)
-booking_fee:
--for direct bookings: amount of booking fees (some parks are adding fees to the guest who book) and/or premium fees
--for indirect bookings: amount of the booking
+- id: booking number
+- seller: effia.com (direct booking) or Onepark (indirect booking, we pay a commission)
+- pocket: id code of the park
+- product: what type of product has been purchased: hourly fare, weekend/1 week packages...
+- status: canceled, finished (past booking), progress & completed (futur booking),
+- option: standard or premium (better slot, guest pay an extra fee)
+- guest_id: guest id (info available only for direct booking with effia.com)
+- booking_fees:
+  - for direct bookings: amount of booking fees (some parks are adding fees to the guest who book) and/or premium fees
+  - for indirect bookings: amount of the booking
+- amount: amount paid for the parking without booking fees
+- total amount: booking fees + amount - discount
+- discount: amount of promotion
+- creation_date_hour: date & time when the booking has been made
+- beginning_date_hour: date & time of the beginning of the booking
+- beginning slice: time slot of the entry of the guest: 0-6h/6-9h/9-12h/12-15h/15-18h/18-24h
+- end_date_jour: ending date & time of the booking
+- max_date_hour: the date & hour until the guest can leave without paying an additional fee. For example, if he booked a weekend or a 7 days package, he can stay in the park until the end of package, even if he made a booking for a shorter period
+- cxl_date_hour: date & hour of cancelation
+- los: length of stay: 0-30min/30min-6h/6h-24h/+24h
+- lead_time_hour: nb of hours between the purchase and the arrival
+- exit_date_hour: real exit time & date
+- overrun_minutes: nb of minutes the guest stayed in the park after the max_date_hour
+- amount_overrun: amount the guest should pay, for the overrun of its booking
+- promo_name: name of the promotional_code
+- promo_amount: amount of the promotion. May not be equal to "discount", if the guest benefit of 2 or more promotional code -> this also create duplicates, if the guest has 2+ promo code. the only differences are in these last 2 colums, all the other columns are equal
