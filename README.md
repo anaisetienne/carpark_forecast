@@ -71,3 +71,15 @@ mkdir tmp
 cd tmp
 carpark_forecast-run
 ```
+
+# Explanations of data
+id: booking number
+seller: effia.com (direct booking) or Onepark (indirect booking, we pay a commission)
+pocket: id code of the park
+product: what type of product has been purchased: hourly fare, weekend/1 week packages...
+status: canceled, finished (past booking), progress ()
+option: standard or premium (better slot, guest pay an extra fee)
+guest_id: guest id (info available only for direct booking with effia.com)
+booking_fee:
+-for direct bookings: amount of booking fees (some parks are adding fees to the guest who book) and/or premium fees
+-for indirect bookings: amount of the booking
