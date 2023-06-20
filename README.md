@@ -74,15 +74,12 @@ carpark_forecast-run
 
 # Explanations of data
 - id: booking number
-- seller: effia.com (direct booking) or Onepark (indirect booking, we pay a commission)
 - pocket: id code of the park (one parking, can have several pockets. The pockets of one park, can have the same prices, or different prices)
-- product: what type of product has been purchased: hourly fare, weekend/1 week packages...
+- product: what type of product has been purchased: hourly fare: H10, weekend/1 week packages : Fxx...
 - status: canceled, finished (past booking), progress & completed (futur booking),
-- option: standard or premium (better slot, guest pay an extra fee), no option for Onepark bookings
-- guest_id: guest id (info available only for direct booking with effia.com), no guest_id for Onepark bookings
-- booking_fees:
-  - for direct bookings: amount of booking fees (some parks are adding fees to the guest who book) and/or premium fees
-  - for indirect bookings: amount of the booking
+- option: standard or premium (better slot, guest pay an extra fee)
+- guest_id: guest id
+- booking_fees: for direct bookings: amount of booking fees (some parks are adding fees to the guest who book) and/or premium fees
 - amount: amount paid for the parking without booking fees
 - total amount: booking fees + amount - discount
 - discount: amount of promotion
@@ -94,6 +91,5 @@ carpark_forecast-run
 - cxl_date_hour: date & hour of cancelation
 - los: length of stay: 0-30min/30min-6h/6h-24h/+24h
 - lead_time_hour: nb of hours between the purchase and the arrival
-- exit_date_hour: real exit time & date
 - promo_name: name of the promotional code
 - promo_amount: amount of the promotion. May not be equal to "discount", if the guest benefits of 2 or more promotional codes -> this also create duplicates, if the guest has 2+ promo codes. The only differences are in these last 2 colums, all the other columns are equal
