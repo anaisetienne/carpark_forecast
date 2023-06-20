@@ -73,10 +73,11 @@ carpark_forecast-run
 ```
 
 # Explanations of data
+date of extract: 19th june 2023
 - id: booking number
 - pocket: id code of the park (one parking, can have several pockets. The pockets of one park, can have the same prices, or different prices)
 - product: what type of product has been purchased: hourly fare: H10, weekend/1 week packages : Fxx...
-- status: canceled, finished (past booking), progress & completed (futur booking),
+- status: canceled, finished (past booking), progress (the booking is in progress at the time of the extract) & completed (futur booking),
 - option: standard or premium (better slot, guest pay an extra fee)
 - guest_id: guest id
 - booking_fees: for direct bookings: amount of booking fees (some parks are adding fees to the guest who book) and/or premium fees
