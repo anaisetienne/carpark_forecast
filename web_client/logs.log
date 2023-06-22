@@ -1,0 +1,46 @@
+2023-06-22 21:06:36,446:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-06-22 21:06:36,446:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-06-22 21:06:36,446:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-06-22 21:06:36,446:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-06-22 21:06:36,801:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2023-06-22 21:07:04,229:WARNING:/Users/lefebvreremy/code/carpark_forecast/web_client/app.py:26: DtypeWarning: Columns (1,14,18,19) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(file, index_col=None)
+
+2023-06-22 21:07:38,788:WARNING:/Users/lefebvreremy/code/carpark_forecast/web_client/app.py:26: DtypeWarning: Columns (1,14,18,19) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(file, index_col=None)
+
+2023-06-22 21:08:04,307:WARNING:/Users/lefebvreremy/code/carpark_forecast/web_client/app.py:21: DtypeWarning: Columns (1,14,18,19) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv("../raw_data/sourcedata.csv", index_col=None)
+
+2023-06-22 21:08:19,399:WARNING:/Users/lefebvreremy/.pyenv/versions/3.10.6/envs/lewagon/lib/python3.10/site-packages/scipy/stats/_stats_py.py:5218: RuntimeWarning: overflow encountered in long_scalars
+  (2 * xtie * ytie) / m + x0 * y0 / (9 * m * (size - 2)))
+
+2023-06-22 21:14:12,654:WARNING:/Users/lefebvreremy/code/carpark_forecast/web_client/app.py:21: DtypeWarning: Columns (1,14,18,19) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv("../raw_data/sourcedata.csv", index_col=None)
+
+2023-06-22 21:14:14,749:WARNING:/Users/lefebvreremy/code/carpark_forecast/web_client/app.py:21: DtypeWarning: Columns (1,14,18,19) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv("../raw_data/sourcedata.csv", index_col=None)
+
+2023-06-22 21:14:29,327:WARNING:/Users/lefebvreremy/.pyenv/versions/3.10.6/envs/lewagon/lib/python3.10/site-packages/scipy/stats/_stats_py.py:5218: RuntimeWarning: overflow encountered in long_scalars
+  (2 * xtie * ytie) / m + x0 * y0 / (9 * m * (size - 2)))
+
+2023-06-22 21:14:41,908:WARNING:/Users/lefebvreremy/code/carpark_forecast/web_client/app.py:21: DtypeWarning: Columns (1,14,18,19) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv("../raw_data/sourcedata.csv", index_col=None)
+
+2023-06-22 21:15:22,109:WARNING:/Users/lefebvreremy/code/carpark_forecast/web_client/app.py:21: DtypeWarning: Columns (1,14,18,19) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv("../raw_data/sourcedata.csv", index_col=None)
+
+2023-06-22 21:37:45,314:WARNING:/Users/lefebvreremy/code/carpark_forecast/web_client/app.py:21: DtypeWarning: Columns (1,14,18,19) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv("../raw_data/sourcedata.csv", index_col=None)
+
+2023-06-22 21:37:46,464:WARNING:/Users/lefebvreremy/code/carpark_forecast/web_client/app.py:21: DtypeWarning: Columns (1,14,18,19) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv("../raw_data/sourcedata.csv", index_col=None)
+
+2023-06-22 21:38:00,835:WARNING:/Users/lefebvreremy/.pyenv/versions/3.10.6/envs/lewagon/lib/python3.10/site-packages/scipy/stats/_stats_py.py:5218: RuntimeWarning: overflow encountered in long_scalars
+  (2 * xtie * ytie) / m + x0 * y0 / (9 * m * (size - 2)))
+
