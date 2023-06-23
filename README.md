@@ -71,3 +71,26 @@ mkdir tmp
 cd tmp
 carpark_forecast-run
 ```
+
+# Explanations of data
+date of extract: 19th june 2023
+- id: booking number
+- pocket: id code of the park (one parking, can have several pockets. The pockets of one park, can have the same prices, or different prices)
+- product: what type of product has been purchased: hourly fare: H10, weekend/1 week packages : Fxx...
+- status: canceled, finished (past booking), progress (the booking is in progress at the time of the extract) & completed (futur booking),
+- option: standard or premium (better slot, guest pay an extra fee)
+- guest_id: guest id
+- booking_fees: for direct bookings: amount of booking fees (some parks are adding fees to the guest who book) and/or premium fees
+- amount: amount paid for the parking without booking fees
+- total amount: booking fees + amount - discount
+- discount: amount of promotion
+- creation_date_hour: date & time when the booking has been made
+- beginning_date_hour: date & time of the beginning of the booking
+- beginning slice: time slot of the entry of the guest: 0-6h/6-9h/9-12h/12-15h/15-18h/18-24h
+- end_date_jour: ending date & time of the booking
+- max_date_hour: the date & hour until the guest can leave without paying an additional fee. For example, if he booked a weekend or a 7 days package, he can stay in the park until the end of package, even if he made a booking for a shorter period
+- cxl_date_hour: date & hour of cancelation
+- los: length of stay: 0-30min/30min-6h/6h-24h/+24h
+- lead_time_hour: nb of hours between the purchase and the arrival
+- promo_name: name of the promotional code
+- promo_amount: amount of the promotion. May not be equal to "discount", if the guest benefits of 2 or more promotional codes -> this also create duplicates, if the guest has 2+ promo codes. The only differences are in these last 2 colums, all the other columns are equal
