@@ -7,3 +7,4 @@ pandas
 pandas-profiling
 streamlit
 streamlit-pandas-profiling
+prophet
