@@ -92,5 +92,3 @@ date of extract: 19th june 2023
 - cxl_date_hour: date & hour of cancelation
 - los: length of stay: 0-30min/30min-6h/6h-24h/+24h
 - lead_time_hour: nb of hours between the purchase and the arrival
-- promo_name: name of the promotional code
-- promo_amount: amount of the promotion. May not be equal to "discount", if the guest benefits of 2 or more promotional codes -> this also create duplicates, if the guest has 2+ promo codes. The only differences are in these last 2 colums, all the other columns are equal
