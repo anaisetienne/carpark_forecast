@@ -7,3 +7,8 @@ pandas
 pandas-profiling
 streamlit
 streamlit-pandas-profiling
+plotly
+prophet
+holidays
+numpy
+sklearn.metrics
