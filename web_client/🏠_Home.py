@@ -18,7 +18,7 @@ from graph_predict import *
 from streamlit_pandas_profiling import st_profile_report
 
 # ML
-from pycaret.classification import setup, compare_models, pull, save_model
+# from pycaret.classification import setup, compare_models, pull, save_model
 
 
 st.session_state["pocket_id"] = "0"
