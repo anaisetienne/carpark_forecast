@@ -1,0 +1,10 @@
+pandas==1.5.3
+matplotlib
+seaborn
+pandas
+pandas-profiling
+streamlit
+streamlit-pandas-profiling
+plotly
+scikit-learn
+openpyxl
