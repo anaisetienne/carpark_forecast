@@ -137,7 +137,7 @@ def create_time_series_df(df: pd.DataFrame) -> pd.DataFrame:
 
         # Update nb_cars_canceled column
         df_days.loc[(df_days['date'] >= start) & (df_days['date'] <= end) & (status == 'canceled'), 'nb_cars_cxl'] += 1
-
+    print(df.info())
     # Count the number of bookings and cancellations for each date
     booking_counts = df.loc[df['status'] != 'canceled', 'beginning_date_hour'].dt.date.value_counts()
     cancellation_counts = df.loc[df['status'] == 'canceled', 'beginning_date_hour'].dt.date.value_counts()
