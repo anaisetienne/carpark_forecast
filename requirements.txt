@@ -1,14 +1,10 @@
 pandas
-scipy
 matplotlib
 seaborn
-statsmodels
 pandas
 pandas-profiling
 streamlit
 streamlit-pandas-profiling
 plotly
-prophet
-holidays
-numpy
-sklearn
+scikit-learn
+openpyxl

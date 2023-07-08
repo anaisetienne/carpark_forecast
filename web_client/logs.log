@@ -44,3 +44,116 @@
 2023-06-22 21:38:00,835:WARNING:/Users/lefebvreremy/.pyenv/versions/3.10.6/envs/lewagon/lib/python3.10/site-packages/scipy/stats/_stats_py.py:5218: RuntimeWarning: overflow encountered in long_scalars
   (2 * xtie * ytie) / m + x0 * y0 / (9 * m * (size - 2)))
 
+2023-07-08 10:09:13,875:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-08 10:09:13,875:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-08 10:09:13,875:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-08 10:09:13,875:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-08 10:09:14,488:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2023-07-08 11:24:58,821:WARNING:/Users/lefebvreremy/code/carpark_forecast/web_client/graph_predict.py:107: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+
+2023-07-08 11:27:01,945:WARNING:/Users/lefebvreremy/code/carpark_forecast/web_client/graph_predict.py:107: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+
+2023-07-08 11:28:23,985:WARNING:/Users/lefebvreremy/code/carpark_forecast/web_client/graph_predict.py:107: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+
+2023-07-08 11:29:14,789:WARNING:/Users/lefebvreremy/code/carpark_forecast/web_client/graph_predict.py:107: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+
+2023-07-08 11:29:30,785:WARNING:/Users/lefebvreremy/code/carpark_forecast/web_client/graph_predict.py:107: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+
+2023-07-08 11:31:03,885:WARNING:/Users/lefebvreremy/code/carpark_forecast/web_client/graph_predict.py:107: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+
+2023-07-08 11:31:13,041:WARNING:/Users/lefebvreremy/code/carpark_forecast/web_client/graph_predict.py:107: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+
+2023-07-08 12:05:37,373:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-08 12:05:37,373:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-08 12:05:37,373:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-08 12:05:37,373:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-08 12:05:37,747:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2023-07-08 13:17:02,532:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-08 13:17:02,532:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-08 13:17:02,532:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-08 13:17:02,532:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-08 14:18:00,154:WARNING:/Users/lefebvreremy/code/carpark_forecast/web_client/graph_predict.py:107: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+
+2023-07-08 14:18:38,959:WARNING:/Users/lefebvreremy/code/carpark_forecast/web_client/graph_predict.py:107: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+
+2023-07-08 14:52:07,606:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-08 14:52:07,606:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-08 14:52:07,606:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-08 14:52:07,606:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-08 15:10:21,985:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-08 15:10:21,985:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-08 15:10:21,985:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-08 15:10:21,985:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-08 15:14:28,314:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-08 15:14:28,314:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-08 15:14:28,314:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-08 15:14:28,314:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-08 16:23:13,954:WARNING:/Users/lefebvreremy/code/carpark_forecast/web_client/graph_predict.py:107: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+
+2023-07-08 16:25:35,751:WARNING:/Users/lefebvreremy/code/carpark_forecast/web_client/graph_predict.py:91: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  # Line plot with data from the previous year at the same start date(adjust to weekday)
+
+2023-07-08 16:25:56,733:WARNING:/Users/lefebvreremy/code/carpark_forecast/web_client/graph_predict.py:91: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  # Line plot with data from the previous year at the same start date(adjust to weekday)
+
+2023-07-08 16:26:04,944:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-08 16:26:04,944:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-08 16:26:04,944:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-08 16:26:04,944:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-08 16:26:23,999:WARNING:/Users/lefebvreremy/code/carpark_forecast/web_client/graph_predict.py:91: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+
+2023-07-08 16:27:30,260:WARNING:/Users/lefebvreremy/code/carpark_forecast/web_client/graph_predict.py:91: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+
+2023-07-08 16:28:09,301:WARNING:/Users/lefebvreremy/code/carpark_forecast/web_client/graph_predict.py:91: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+
+2023-07-08 16:49:44,763:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-08 16:49:44,764:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-08 16:49:44,764:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-07-08 16:49:44,764:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
