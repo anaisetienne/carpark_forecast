@@ -6,7 +6,7 @@ if 'pocket_id' not in st.session_state:
 st.title("Forecast application ")
 col1, col2 = st.columns(2)
 
-col1.image("./img/home.jpeg")
+col1.image("./img/home.jpg")
 col2.text("The procedure is as follows:")
 col2.text("1 - Click on Upload and clean in the sidebar")
 col2.text("2 - Select an xlsx file to upload")
