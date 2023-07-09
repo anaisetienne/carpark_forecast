@@ -17,11 +17,11 @@ from graph_predict import *
 # Profiling
 from streamlit_pandas_profiling import st_profile_report
 
-# ML
-# from pycaret.classification import setup, compare_models, pull, save_model
+if 'pocket_id' not in st.session_state:
+    st.session_state["pocket_id"] = "0"
 
 
-st.session_state["pocket_id"] = "0"
+
 
 # df = None
 # cleaned_df = pd.DataFrame()

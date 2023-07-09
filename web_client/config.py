@@ -1,2 +1,2 @@
-raw_data_path = "./tmp_data/sourcedata.csv"
-raw_data_path_processed = "./tmp_data/sourcedataproc.csv"
+raw_data_path = "./sourcedata.csv"
+raw_data_path_processed = "./sourcedataproc.csv"
