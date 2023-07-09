@@ -54,7 +54,7 @@ def prepare_forecast_data_for_plotting(date_reference: datetime.date, period: in
     return df_future_values
 
 def get_data_from_last_year(date_reference_past: datetime.date, df: pd.DataFrame, period:int) -> pd.DataFrame:
-    days_range_past = pd.date_range(end=date_reference_past, periods=period)
+    days_range_past = pd.date_range(start=date_reference_past, periods=period)
     df_filtered_past = df[df['date'].isin(days_range_past)]
     return df_filtered_past
 

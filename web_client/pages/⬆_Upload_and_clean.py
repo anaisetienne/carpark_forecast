@@ -34,11 +34,11 @@ if not cleaned_df.empty:
         st.title('Data preprocessed for time serie model')
         st.dataframe(time_series_df)
         # Save CSV to use the df elsewhere
-        print("AVANT")
         st.session_state["pocket_id"] = pocket_id
-        print("APRES")
-        selected_pocket_df.to_csv(config.raw_data_path)
-        time_series_df.to_csv(config.raw_data_path_processed)
+        selected_pocket_df.to_csv(config.raw_data_path, index=False)
+        time_series_df.to_csv(config.raw_data_path_processed, index=False)
+
+
 
 
 # FOOTER
