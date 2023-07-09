@@ -1,4 +1,18 @@
+import os
 import streamlit as st
+
+
+# chemin absolu du répertoire racine
+root_dir = os.path.dirname(os.path.abspath(__file__))
+
+
+
+# nom du dossier du modèle
+# model_folder = config.tgv_model_path
+model_folder = 'img/home.jpg'
+
+# chemin complet du dossier du modèle
+model_path = os.path.join(root_dir, model_folder)
 
 if 'pocket_id' not in st.session_state:
     st.session_state["pocket_id"] = "0"
@@ -6,7 +20,7 @@ if 'pocket_id' not in st.session_state:
 st.title("Forecast application ")
 col1, col2 = st.columns(2)
 
-col1.image("./img/home.jpg")
+col1.image(model_path)
 col2.text("The procedure is as follows:")
 col2.text("1 - Click on Upload and clean in the sidebar")
 col2.text("2 - Select an xlsx file to upload")
