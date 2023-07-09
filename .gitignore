@@ -1,2 +1,3 @@
 .DS_Store
-web_client/raw_data/
+web_client/raw_data/sourcedata.csv
+web_client/raw_data/sourcedataproc.csv
