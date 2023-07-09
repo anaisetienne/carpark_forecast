@@ -4,18 +4,19 @@ import streamlit as st
 import pandas as pd
 import pandas_profiling
 
+
 # CONFIG
-from config import raw_data_path
+from ml_utils import config
 
-# CLEANING
-from data_cleaning import *
+# # CLEANING
+# from utils import data_cleaning
 
-# GRAPH
-from graph_predict import *
+# # GRAPH
+# from utils import graph_predict
 
 
-# Profiling
-from streamlit_pandas_profiling import st_profile_report
+# # Profiling
+# from streamlit_pandas_profiling import st_profile_report
 
 if 'pocket_id' not in st.session_state:
     st.session_state["pocket_id"] = "0"

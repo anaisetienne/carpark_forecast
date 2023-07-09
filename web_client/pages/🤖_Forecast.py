@@ -1,9 +1,10 @@
 import streamlit as st
+import pandas as pd
 
-from graph_predict import *
+from ml_utils import model_rnn as m
+from ml_utils import config
+from ml_utils import graph_predict as gp
 
-from config import raw_data_path_processed
-from model_rnn import predictions
 
 
 # st.write(st.session_state["pocket_id"])
@@ -37,15 +38,15 @@ st.markdown(title_text, unsafe_allow_html=True)
 button = st.button('Predict')
 
 if button:
-    df = pd.read_csv(raw_data_path_processed, parse_dates=['date'])
+    df = pd.read_csv(config.raw_data_path_processed, parse_dates=['date'])
 
     date_reference = pd.to_datetime('2023-06-05')
-    date_reference_past = get_past_year_weekday(date_reference)
-    data_to_plot = get_data_past_two_weeks(date_reference, 15, df)
-    data_to_plot_forecast = prepare_forecast_data_for_plotting(date_reference, 15, predictions)
-    data_past = get_data_from_last_year(date_reference_past, df, period=30)
+    date_reference_past = gp.get_past_year_weekday(date_reference)
+    data_to_plot = gp.get_data_past_two_weeks(date_reference, 15, df)
+    data_to_plot_forecast = gp.prepare_forecast_data_for_plotting(date_reference, 15, m.predictions)
+    data_past = gp.get_data_from_last_year(date_reference_past, df, period=30)
 
-    fig = plot_graph_plotly(data_to_plot, data_to_plot_forecast, data_past, date_reference)
+    fig = gp.plot_graph_plotly(data_to_plot, data_to_plot_forecast, data_past, date_reference)
     st.plotly_chart(fig, use_container_width=True)
 
 
