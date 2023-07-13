@@ -2,6 +2,10 @@ import os
 import streamlit as st
 
 
+import os
+os.environ['PYTORCH_ENABLE_MPS_FALLBACK'] = '1'
+
+
 # chemin absolu du répertoire racine
 root_dir = os.path.dirname(os.path.abspath(__file__))
 

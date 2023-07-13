@@ -1,13 +1,14 @@
+# THIRD PARTY
 import streamlit as st
 import pandas as pd
 
-from ml_utils import model_rnn as m
+# OWN
+from ml_utils import model_mlp as mlp
+from ml_utils import model_rnn as rnn
 from ml_utils import config
 from ml_utils import graph_predict as gp
 
 
-
-# st.write(st.session_state["pocket_id"])
 pocket_id = st.session_state["pocket_id"]
 
 st.title("Forecasting number of cars in specific carpark.")
@@ -18,31 +19,25 @@ title_text = """
 
 st.markdown(title_text, unsafe_allow_html=True)
 
-# pocket_id = st.selectbox("Pocket ID",
-#         ("25",
-#         "34",
-#         "36",
-#         "52",
-#         "95",
-#         "180",
-#         "206",
-#         "272",
-#         "287",
-#         "368",
-#         "781",
-#         "875",
-#         "1435",
-#         "5435",
-#         "6287"))
+model_id = st.selectbox("Model type",
+        ("RNN",
+        "NBEATS",
+        "NHITS"))
 
 button = st.button('Predict')
 
 if button:
     df = pd.read_csv(config.raw_data_path_processed, parse_dates=['date'])
-    tgv_model = m.tgv_model
+    if model_id == 'RNN':
+        model = rnn.predictions_25_model
+        predictions_tgv = rnn.tgv_prediction(model)
+        result = [[num] for num in predictions_tgv[0]]
+    elif model_id == 'NBEATS':
+        result = mlp.get_n_beats_predictions()
 
-    predictions_tgv = m.tgv_prediction(tgv_model)
-    result = [[num] for num in predictions_tgv[0]]
+    elif model_id == 'NHITS':
+        result = mlp.get_n_hits_predictions()
+
 
     date_reference = pd.to_datetime('2023-06-05')
     date_reference_past = gp.get_past_year_weekday(date_reference)
@@ -50,16 +45,8 @@ if button:
     data_to_plot_forecast = gp.prepare_forecast_data_for_plotting(date_reference, 15, result)
     data_past = gp.get_data_from_last_year(date_reference_past, df, period=30)
 
-    print("==============RESULT==================")
-    print(result)
     fig = gp.plot_graph_plotly(data_to_plot, data_to_plot_forecast, data_past, date_reference)
     st.plotly_chart(fig, use_container_width=True)
-
-
-
-
-
-
 
 
 # FOOTER
