@@ -1,11 +1,21 @@
+import os
 import streamlit as st
 
+
+
+# chemin absolu du répertoire racine
+root_dir = os.path.dirname(os.path.abspath(__file__))
+
+# chemin absolu du répertoire parent
+parent_dir = os.path.dirname(root_dir)
+
+print(parent_dir)
 
 
 st.title("The A-Team")
 
 # Liste des noms des fichiers d'images
-image_files = ['./img/anais.png', './img/annett.png', './img/zyad.jpeg', './img/remy.jpg', './img/reinis.jpg']
+image_files = [os.path.join(parent_dir, 'img/anais.png'), os.path.join(parent_dir, 'img/annett.png'), os.path.join(parent_dir, 'img/zyad.jpeg'), os.path.join(parent_dir, 'img/remy.jpg'), os.path.join(parent_dir, 'img/reinis.jpg')]
 
 # Pour chaque fichier image, affichez l'image
 col1, col2 = st.columns(2)
