@@ -4,21 +4,20 @@ import streamlit as st
 import pandas as pd
 
 # CONFIG
-from config import raw_data_path, raw_data_path_processed
-
+from ml_utils import config
 # CLEANING
-from data_cleaning import *
+from ml_utils import data_cleaning as dc
 
 
 df = None
 cleaned_df = pd.DataFrame()
 
-file = st.file_uploader("Please select an Excel file")
+file = st.file_uploader("Thanks to select a xlsx file")
 if file:
     df = pd.read_excel( file,
-                        dtype=custom_dtype,
+                        dtype=dc.custom_dtype,
                         parse_dates=['creation_date_hour', 'beginning_date_hour', 'end_date_hour'])
-    cleaned_df = clean_df(df)
+    cleaned_df = dc.clean_df(df)
 
 if not cleaned_df.empty:
 
@@ -31,15 +30,15 @@ if not cleaned_df.empty:
         st.title('Cleaned Data')
         st.dataframe(selected_pocket_df)
 
-        time_series_df = create_time_series_df(selected_pocket_df)
+        time_series_df = dc.create_time_series_df(selected_pocket_df)
         st.title('Data preprocessed for time serie model')
         st.dataframe(time_series_df)
         # Save CSV to use the df elsewhere
-        print("AVANT")
         st.session_state["pocket_id"] = pocket_id
-        print("APRES")
-        selected_pocket_df.to_csv(raw_data_path)
-        time_series_df.to_csv(raw_data_path_processed)
+        selected_pocket_df.to_csv(config.raw_data_path, index=False)
+        time_series_df.to_csv(config.raw_data_path_processed, index=False)
+
+
 
 
 # FOOTER
